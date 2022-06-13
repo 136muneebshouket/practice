@@ -1580,19 +1580,48 @@
 //////////////////////////////////////////////////////////////////
 // dates 
 
-let x = new Date();
-console.log(x)
-console.log(x.getFullYear());
-console.log(x.getMonth());
-console.log(x.getDate());
-console.log(x.getDay());
-console.log(x.getHours,x.getMinutes,x.getSeconds);
-getHours()
-	// Get the hour (0-23)
-getMinutes()
-	// Get the minute (0-59)
-getSeconds()
-	// Get the second (0-59)
-getMilliseconds()
-	// Get the millisecond (0-999)
-getTime()
+// let x = new Date();
+// console.log(x)
+// console.log(x.getFullYear());
+// console.log(x.getMonth());
+// console.log(x.getDate());
+// console.log(x.getDay());
+// console.log(x.getHours,x.getMinutes,x.getSeconds);
+// getHours()
+// 	// Get the hour (0-23)
+// getMinutes()
+// 	// Get the minute (0-59)
+// getSeconds()
+// 	// Get the second (0-59)
+// getMilliseconds()
+// 	// Get the millisecond (0-999)
+// getTime()
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//object 
+
+
+
+function car(speed ,name){
+  this.name =name;
+  this.speed=speed
+
+}
+
+ let car1= new car(120,"cultus");
+ //we can make objects bu just
+ let car2 = new car(440,"bmw")
+ console.log(car1,car2);
+
+
+
+
+ 
