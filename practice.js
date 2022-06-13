@@ -1610,18 +1610,28 @@
 
 
 
-function car(speed ,name){
-  this.name =name;
-  this.speed=speed
+// function car(speed ,name){
+//   this.name =name;
+//   this.speed=speed
 
-}
+// }
 
- let car1= new car(120,"cultus");
- //we can make objects bu just
- let car2 = new car(440,"bmw")
- console.log(car1,car2);
+//  let car1= new car(120,"cultus");
+//  //we can make objects bu just
+//  let car2 = new car(440,"bmw")
+//  console.log(car1,car2);
 
 
+ const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+person.gender = "male";
+
+
+console.log(person);
 
 
  
