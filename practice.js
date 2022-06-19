@@ -1568,7 +1568,31 @@
 //json
 
 
-const text = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}';
-const obj = JSON.parse(text);
-obj.age= eval("("+ obj.age +")") ;
-document.getElementById("demo").innerHTML = obj.name + ", " + obj.age() ; 
+// const text = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}';
+// const obj = JSON.parse(text);
+// obj.age= eval("("+ obj.age +")") ;
+// document.getElementById("demo").innerHTML = obj.name + ", " + obj.age() ; 
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+// dates 
+
+let x = new Date();
+console.log(x)
+console.log(x.getFullYear());
+console.log(x.getMonth());
+console.log(x.getDate());
+console.log(x.getDay());
+console.log(x.getHours,x.getMinutes,x.getSeconds);
+getHours()
+	// Get the hour (0-23)
+getMinutes()
+	// Get the minute (0-59)
+getSeconds()
+	// Get the second (0-59)
+getMilliseconds()
+	// Get the millisecond (0-999)
+getTime()
