@@ -1541,18 +1541,34 @@
 //   console.log("Username and password fetched.... Please wait..." )
 //   }, 4000) 
 
-function myFunction() {
-  const message = document.getElementById("p01");
-  message.innerHTML = "";
-  let x = document.getElementById("demo").value;
-  try { 
-    if(x == "")  throw "empty";
-    if(isNaN(x)) throw "not a number";
-    x = Number(x);
-    if(x < 5)  throw "too low";
-    if(x > 10)   throw "too high";
-  }
-  catch(err) {
-    message.innerHTML = "Input is " + err;
-  }
-}
+// function myFunction() {
+//   const message = document.getElementById("p01");
+//   message.innerHTML = "";
+//   let x = document.getElementById("demo").value;
+//   try { 
+//     if(x == "")  throw "empty";
+//     if(isNaN(x)) throw "not a number";
+//     x = Number(x);
+//     if(x < 5)  throw "too low";
+//     if(x > 10)   throw "too high";
+//   }
+//   catch(err) {
+//     message.innerHTML = "Input is " + err;
+//   }
+// }
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////
+//json
+
+
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
