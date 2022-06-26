@@ -1454,36 +1454,90 @@
 
 /////////////////////////////////////////////////////////////////////////
 
-let p = new Promise((res,rej)=>{
+// let p = new Promise((res,rej)=>{
  
-  setTimeout(() => {
-    let arr=[40, 100, 1, 5, 25, 10];
-   res(arr);
+//   setTimeout(() => {
+//     let arr=[40, 100, 1, 5, 25, 10];
+//    res(arr);
    
-  //  rej('some error occured');
-  }, 5000);
-})
+//   //  rej('some error occured');
+//   }, 5000);
+// })
 
 
 
 
 
-let Value=null;
-p.then((value)=>{
-    Value=value;
-    func();
-}).catch((error)=>{
-  console.log(error)
-})
+// let Value=null;
+// p.then((value)=>{
+//     Value=value;
+//     func();
+// }).catch((error)=>{
+//   console.log(error)
+// })
 
-function func(){
-  if(Value!==null){
-    console.log(Value)
-    document.getElementById('p').innerHTML=Value;
-  }else{
-    document.getElementById('p').innerHTML='pending';
-    console.log('pending')
-  }
-}
-func();
+// function func(){
+//   if(Value!==null){
+//     console.log(Value)
+//     document.getElementById('p').innerHTML=Value;
+//   }else{
+//     document.getElementById('p').innerHTML='pending';
+//     console.log('pending')
+//   }
+// }
+// func();
 // Value? console.log(Value):console.log('pending');
+
+
+
+
+
+
+////////////////////////////////////////// reversing a string
+
+// let str = 'world';
+
+// let reverse = str.split('').reverse().join("").toString();
+// console.log(reverse);
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////
+//error handling
+setTimeout(()=>{
+  console.log("Hacking wifi.... Please wait..." ) 
+  }, 1000)
+  
+  try{
+      
+
+          console.log(rahul)
+
+                  
+  }
+  catch(err){
+    console.log(err);  
+  }
+  
+  
+  setTimeout(()=>{ 
+          console.log("Fetching username and password.... Please wait..." )
+  }, 2000) 
+  
+  setTimeout(()=>{ 
+  console.log("Hacking  facebook id.... Please wait..." )
+  }, 3000) 
+  
+  setTimeout(()=>{ 
+  console.log("Username and password fetched.... Please wait..." )
+  }, 4000) 
+
