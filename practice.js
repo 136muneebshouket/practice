@@ -1513,31 +1513,46 @@
 
 ////////////////////////////////////////////////
 //error handling
-setTimeout(()=>{
-  console.log("Hacking wifi.... Please wait..." ) 
-  }, 1000)
+// setTimeout(()=>{
+//   console.log("Hacking wifi.... Please wait..." ) 
+//   }, 1000)
   
-  try{
+//   try{
       
 
-          console.log(rahul)
+//           console.log(rahul)
 
                   
-  }
-  catch(err){
-    console.log(err);  
-  }
+//   }
+//   catch(err){
+//     console.log(err);  
+//   }
   
   
-  setTimeout(()=>{ 
-          console.log("Fetching username and password.... Please wait..." )
-  }, 2000) 
+//   setTimeout(()=>{ 
+//           console.log("Fetching username and password.... Please wait..." )
+//   }, 2000) 
   
-  setTimeout(()=>{ 
-  console.log("Hacking  facebook id.... Please wait..." )
-  }, 3000) 
+//   setTimeout(()=>{ 
+//   console.log("Hacking  facebook id.... Please wait..." )
+//   }, 3000) 
   
-  setTimeout(()=>{ 
-  console.log("Username and password fetched.... Please wait..." )
-  }, 4000) 
+//   setTimeout(()=>{ 
+//   console.log("Username and password fetched.... Please wait..." )
+//   }, 4000) 
 
+function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
