@@ -1429,10 +1429,61 @@
 
 ///////////////////////////////////array sorting
 
-const points = [40, 100, 1, 5, 25, 10];
+// const points = [40, 100, 1, 5, 25, 10];
 
 
-let ascending =points.sort((a,b)=>{return a-b});
-console.log(ascending);
-let desending =points.sort((a,b)=>{return b-a});
-console.log(desending);
+// let ascending =points.sort((a,b)=>{return a-b});
+// console.log(ascending);
+// let desending =points.sort((a,b)=>{return b-a});
+// console.log(desending);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+let p = new Promise((res,rej)=>{
+ 
+  setTimeout(() => {
+    let arr=[40, 100, 1, 5, 25, 10];
+   res(arr);
+   
+  //  rej('some error occured');
+  }, 5000);
+})
+
+
+
+
+
+let Value=null;
+p.then((value)=>{
+    Value=value;
+    func();
+}).catch((error)=>{
+  console.log(error)
+})
+
+function func(){
+  if(Value!==null){
+    console.log(Value)
+    document.getElementById('p').innerHTML=Value;
+  }else{
+    document.getElementById('p').innerHTML='pending';
+    console.log('pending')
+  }
+}
+func();
+// Value? console.log(Value):console.log('pending');
