@@ -1364,43 +1364,43 @@
 
 ////////////////////////////////////////////////////////////////////
 
-fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-let index=0
-let forward=true;
-const func2=()=>{
+// let index=0
+// let forward=true;
+// const func2=()=>{
  
 
 
 
- if(forward==true){
+//  if(forward==true){
   
   
-  if(index==fruits.length-1){
-    forward=false;
-  }else{ 
-    // console.log(fruits[index]);
-    document.getElementById('id').innerHTML=fruits[index]
-    index+=1;}
+//   if(index==fruits.length-1){
+//     forward=false;
+//   }else{ 
+//     // console.log(fruits[index]);
+//     document.getElementById('id').innerHTML=fruits[index]
+//     index+=1;}
   
 
   
-}
- else if (forward==false) {
-  // console.log(fruits[index]);
+// }
+//  else if (forward==false) {
+//   // console.log(fruits[index]);
   
-  if(index==0){
-    forward=true;
-  }
-  else{ 
-    // console.log(fruits[index]);
-    document.getElementById('id').innerHTML=fruits[index]
-     index-=1}
- } 
+//   if(index==0){
+//     forward=true;
+//   }
+//   else{ 
+//     // console.log(fruits[index]);
+//     document.getElementById('id').innerHTML=fruits[index]
+//      index-=1}
+//  } 
 
 
-}
-setInterval(func2,1000);
+// }
+// setInterval(func2,1000);
 
 
 
@@ -1408,15 +1408,31 @@ setInterval(func2,1000);
 
 ////////////////////////////////////////////////////////////////////////////
 
-const arr=[45, 4, 9, 16, 25];
-let num=0;
-const func=()=>{
-  document.getElementById('id').innerHTML=arr[num]
- num+=1;
+// const arr=[45, 4, 9, 16, 25];
+// let num=0;
+// const func=()=>{
+//   document.getElementById('id').innerHTML=arr[num]
+//  num+=1;
 
-if(num==arr.length){
-  num=0
-}
+// if(num==arr.length){
+//   num=0
+// }
   
-};
- let close = setInterval(func,1000);
+// };
+//  let close = setInterval(func,1000);
+
+
+
+
+
+
+
+///////////////////////////////////array sorting
+
+const points = [40, 100, 1, 5, 25, 10];
+
+
+let ascending =points.sort((a,b)=>{return a-b});
+console.log(ascending);
+let desending =points.sort((a,b)=>{return b-a});
+console.log(desending);
