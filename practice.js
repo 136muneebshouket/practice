@@ -1315,6 +1315,7 @@
 // for(var x of num){
 
 //   console.log(x);
+//   document.getElementById("p").innerHTML=x
 // }
 
 // const Person = {fname:"John", lname:"Doe", age:25};
@@ -1328,15 +1329,94 @@
 
 
 
-let num=1;
-function func(){
-  
- num+=1;
-   
- console.log(num)
- if(num==20){
-  clearInterval(myinterval);
- }
-}
+// let num=0;
+// // let time=true;
+// function func(){
+//   // if(time){
+//  num+=1;
+//   //  let num=20
+//  console.log(num)
+//  if(num==20){
+//   // time=false;
+//   // console.log('gone')
+//   clearInterval(myinterval);
+//  }
+// //  alert('');
+// // }
+// }
 
-let myinterval = setInterval(func,1000);
+// let myinterval = setInterval(func,1000);
+
+// const func2=()=>{
+//   // document.getElementById("p").innerHTML=nume;
+ 
+
+// }
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let index=0
+let forward=true;
+const func2=()=>{
+ 
+
+
+
+ if(forward==true){
+  
+  
+  if(index==fruits.length-1){
+    forward=false;
+  }else{ 
+    // console.log(fruits[index]);
+    document.getElementById('id').innerHTML=fruits[index]
+    index+=1;}
+  
+
+  
+}
+ else if (forward==false) {
+  // console.log(fruits[index]);
+  
+  if(index==0){
+    forward=true;
+  }
+  else{ 
+    // console.log(fruits[index]);
+    document.getElementById('id').innerHTML=fruits[index]
+     index-=1}
+ } 
+
+
+}
+setInterval(func2,1000);
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+
+const arr=[45, 4, 9, 16, 25];
+let num=0;
+const func=()=>{
+  document.getElementById('id').innerHTML=arr[num]
+ num+=1;
+
+if(num==arr.length){
+  num=0
+}
+  
+};
+ let close = setInterval(func,1000);
