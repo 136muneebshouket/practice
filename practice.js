@@ -1,14 +1,14 @@
-// function addition(x, y , callback){
-//     setTimeout(() => {
-//     document.write(`The sum of ${x} and ${y} is ${x+y}.`); 
-//     callback(); 
-//      }, 5000); } 
-//      // display() function is called just after the ending of addition() function
-//     function mycallback(){ 
-//     document.write('Numbers added and thank u'); 
-//      } 
-//      // Calling addition() function
-//     addition(5,5,mycallback);
+function addition(x, y , callback){
+    setTimeout(() => {
+    document.write(`The sum of ${x} and ${y} is ${x+y}.`); 
+    callback(); 
+     }, 5000); } 
+     // display() function is called just after the ending of addition() function
+    function mycallback(){ 
+    document.write('Numbers added and thank u'); 
+     } 
+     // Calling addition() function
+    addition(5,5,mycallback);
 
 
 
@@ -61,16 +61,16 @@
 
 // generating random numbers from an arrray
 
-let arr = [];
+// let arr = [];
 
- for(var i = 1; i<=100; i++){
-    arr.push(i);
- }
+//  for(var i = 1; i<=100; i++){
+//     arr.push(i);
+//  }
  
-  const func = ()=>{
- let INDEX =    Math.floor(Math.random()* (arr.length-1))
- document.getElementById("demo1").innerHTML=arr[INDEX];
+//   const func = ()=>{
+//  let INDEX =    Math.floor(Math.random()* (arr.length-1))
+//  document.getElementById("demo1").innerHTML=arr[INDEX];
 
-  }
+//   }
 
   //random numbwers
