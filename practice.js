@@ -1280,21 +1280,21 @@
 // for in loop i javascript
 
 
-const numbers = [45, 4, 9, 16, 25];
+// const numbers = [45, 4, 9, 16, 25];
 
 
-for(var x in numbers){
+// for(var x in numbers){
 
-  console.log(numbers[x]);
-}
+//   console.log(numbers[x]);
+// }
 
-const person = {fname:"John", lname:"Doe", age:25};
+// const person = {fname:"John", lname:"Doe", age:25};
 
-let text = "";
-for (let x in person) {
-  text += person[x];
-}
-console.log(text);
+// let text = "";
+// for (let x in person) {
+//   text += person[x];
+// }
+// console.log(text);
 //it also works on the objects
 
 
@@ -1309,13 +1309,13 @@ console.log(text);
 // for of loop in javascript
 
 
-const num = [45, 4, 9, 16, 25];
+// const num = [45, 4, 9, 16, 25];
 
 
-for(var x of num){
+// for(var x of num){
 
-  console.log(x);
-}
+//   console.log(x);
+// }
 
 // const Person = {fname:"John", lname:"Doe", age:25};
 
@@ -1328,4 +1328,15 @@ for(var x of num){
 
 
 
+let num=1;
+function func(){
+  
+ num+=1;
+   
+ console.log(num)
+ if(num==20){
+  clearInterval(myinterval);
+ }
+}
 
+let myinterval = setInterval(func,1000);
