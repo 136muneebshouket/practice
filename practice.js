@@ -1263,13 +1263,69 @@
 
 
 //async awiat in javascript
-async function myDisplay() {
-  let myPromise = new Promise(function(resolve) {
-    setTimeout(function() {resolve("I love You !!");}, 3000);
-  });
-  document.getElementById("demo").innerHTML = await myPromise;
+// async function myDisplay() {
+//   let myPromise = new Promise(function(resolve) {
+//     setTimeout(function() {resolve("I love You !!");}, 3000);
+//   });
+//   document.getElementById("demo").innerHTML = await myPromise;
+// }
+
+// myDisplay();
+
+
+
+
+
+
+// for in loop i javascript
+
+
+const numbers = [45, 4, 9, 16, 25];
+
+
+for(var x in numbers){
+
+  console.log(numbers[x]);
 }
 
-myDisplay();
+const person = {fname:"John", lname:"Doe", age:25};
+
+let text = "";
+for (let x in person) {
+  text += person[x];
+}
+console.log(text);
+//it also works on the objects
+
+
+
+
+
+
+
+
+
+
+// for of loop in javascript
+
+
+const num = [45, 4, 9, 16, 25];
+
+
+for(var x of num){
+
+  console.log(x);
+}
+
+// const Person = {fname:"John", lname:"Doe", age:25};
+
+// let tx = "";
+// for (let x of Person) {
+//   text += x;
+// }
+// console.log(tx);
+//it does,nt works on the objects
+
+
 
 
