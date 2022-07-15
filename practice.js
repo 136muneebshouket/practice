@@ -1220,14 +1220,56 @@
 
 // 1 second = 1000 milliseconds.
 
-const myInterval = setInterval(myTimer, 1000);
+// const myInterval = setInterval(myTimer, 1000);
 
-function myTimer() {
-  const date = new Date();
-  document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+// function myTimer() {
+//   const date = new Date();
+//   document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+// }
+
+// function myStop() {
+//   clearInterval(myInterval);
+
+// }
+
+
+
+
+
+
+
+
+
+// var value;
+// function myFunction(){
+
+// let Value=document.getElementById("input").value;
+// console.log(Value);
+//  value=Value;
+// }
+
+
+
+// const myFunc1 =()=>{
+
+// console.log(value);
+
+// }
+
+
+
+
+
+
+
+//async awiat in javascript
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {resolve("I love You !!");}, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
 }
 
-function myStop() {
-  clearInterval(myInterval);
+myDisplay();
 
-}
+
