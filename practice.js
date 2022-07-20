@@ -238,8 +238,23 @@
 // document.getElementById("demo").innerHTML = fred.salary;
 
 
-let text1 = "ab";
-let text2 = "cd";
-let result = text1.localeCompare(text2);
+// let text1 = "ab";
+// let text2 = "cd";
+// let result = text1.localeCompare(text2);
 
-document.getElementById("demo").innerHTML = result;
+// document.getElementById("demo").innerHTML = result;
+
+function myFunction() {
+  document.getElementById("btn").setAttribute("onclick", "myFunc2()"); 
+}
+
+const myFunc1=()=>{
+
+console.log('i was clicked');
+
+}
+const myFunc2=()=>{
+
+  console.log('i 2 was clicked');
+  
+  }
