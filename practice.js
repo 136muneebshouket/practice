@@ -227,12 +227,19 @@
 
 
 
-function employee(name, jobtitle, born) {
-  this.name = name;
-  this.jobtitle = jobtitle;
-  this.born = born;
-}
-employee.prototype.salary = 2000;
+// function employee(name, jobtitle, born) {
+//   this.name = name;
+//   this.jobtitle = jobtitle;
+//   this.born = born;
+// }
+// employee.prototype.salary = 2000;
 
-const fred = new employee("Fred Flintstone", "Caveman", 1970);
-document.getElementById("demo").innerHTML = fred.salary;
+// const fred = new employee("Fred Flintstone", "Caveman", 1970);
+// document.getElementById("demo").innerHTML = fred.salary;
+
+
+let text1 = "ab";
+let text2 = "cd";
+let result = text1.localeCompare(text2);
+
+document.getElementById("demo").innerHTML = result;
