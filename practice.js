@@ -198,28 +198,41 @@
 
 
 
-console.log("inheritance");
+// console.log("inheritance");
 
-class employee {
-    constructor(givenname, givenexperience, givendivision){
-        this.name = givenname;
+// class employee {
+//     constructor(givenname, givenexperience, givendivision){
+//         this.name = givenname;
     
-        this.experience =givenexperience;
+//         this.experience =givenexperience;
     
-        this.division = givendivision;
+//         this.division = givendivision;
 
-    }
+//     }
 
+// }
+
+// class programer extends employee{
+// constructor(givenname, givenexperience, givendivision,language,github){
+// super(givenname, givenexperience, givendivision);
+// this.language = language;
+// this.github = github;
+// }
+
+// }
+
+//  let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
+//  console.log(employe); 
+
+
+
+
+function employee(name, jobtitle, born) {
+  this.name = name;
+  this.jobtitle = jobtitle;
+  this.born = born;
 }
+employee.prototype.salary = 2000;
 
-class programer extends employee{
-constructor(givenname, givenexperience, givendivision,language,github){
-super(givenname, givenexperience, givendivision);
-this.language = language;
-this.github = github;
-}
-
-}
-
- let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
- console.log(employe); 
+const fred = new employee("Fred Flintstone", "Caveman", 1970);
+document.getElementById("demo").innerHTML = fred.salary;
