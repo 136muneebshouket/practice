@@ -160,37 +160,66 @@
 
 // split method of string method
 
-let text = "abcdefg";
-const myArray = text.split(",");
-document.getElementById("demo").innerHTML = myArray;
-console.log(myArray)
+// let text = "abcdefg";
+// const myArray = text.split(",");
+// document.getElementById("demo").innerHTML = myArray;
+// console.log(myArray)
 
-// getting number from user and finding prime number btween it
-const form = document.querySelector(".grocery-form");
-form.addEventListener("submit", func);
+// // getting number from user and finding prime number btween it
+// const form = document.querySelector(".grocery-form");
+// form.addEventListener("submit", func);
 
 
-function func(){
-    let num = document.getElementById("demo");
-    let num2 = num.value;
+// function func(){
+//     let num = document.getElementById("demo");
+//     let num2 = num.value;
     
-let str = num2.toString().split("")
-let arr=[];
-     for(var i=0; i<=str.length-1; i++){
-      var number = parseInt(str[i])
-          arr.push(number);
-     }
+// let str = num2.toString().split("")
+// let arr=[];
+//      for(var i=0; i<=str.length-1; i++){
+//       var number = parseInt(str[i])
+//           arr.push(number);
+//      }
 
-       let arr2 = arr.filter((num)=>{
+//        let arr2 = arr.filter((num)=>{
 
-             for(var j=2; j<=arr.length; j++){
-              if(num%j==0 && num!==j){
-                return false;
-              }
-             }
-             return true;
-       })
-       document.getElementById("demo1").innerHTML=`<p>${arr2}</p>`;
+//              for(var j=2; j<=arr.length; j++){
+//               if(num%j==0 && num!==j){
+//                 return false;
+//               }
+//              }
+//              return true;
+//        })
+//        document.getElementById("demo1").innerHTML=`<p>${arr2}</p>`;
     
+
+// }
+
+
+
+
+console.log("inheritance");
+
+class employee {
+    constructor(givenname, givenexperience, givendivision){
+        this.name = givenname;
+    
+        this.experience =givenexperience;
+    
+        this.division = givendivision;
+
+    }
 
 }
+
+class programer extends employee{
+constructor(givenname, givenexperience, givendivision,language,github){
+super(givenname, givenexperience, givendivision);
+this.language = language;
+this.github = github;
+}
+
+}
+
+ let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
+ console.log(employe); 
