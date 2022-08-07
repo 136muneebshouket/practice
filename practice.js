@@ -76,22 +76,39 @@
   //random numbwers
 
 
-  let arr = [];
+//   let arr = [];
 
- for(var i = 1; i<=100; i++){
-    arr.push(i);
- }
+//  for(var i = 1; i<=100; i++){
+//     arr.push(i);
+//  }
  
 
- let arr2 = arr.filter((num)=>{
-    for(var j = 2; j<=100; j++){
+//  let arr2 = arr.filter((num)=>{
+//     for(var j = 2; j<=100; j++){
     
-      if(num%j==0 && num!==j){
-       return false;
-      }
+//       if(num%j==0 && num!==j){
+//        return false;
+//       }
      
-    }
-     return true;
-    })
+//     }
+//      return true;
+//     })
 
-console.log(arr2)
+// console.log(arr2)
+
+
+let increment = document.querySelector("#increment");
+let decrement = document.querySelector("#decrement");
+let counterValue = document.querySelector("#counterValue");
+
+let counter = 0;
+
+increment.addEventListener("click" , ()=>{
+    counter++;
+    counterValue.innerText = counter;
+})
+;
+decrement.addEventListener("click" , ()=>{
+    counter--;
+    counterValue.innerText = counter;
+});
