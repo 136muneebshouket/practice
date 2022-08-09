@@ -1,14 +1,14 @@
-function addition(x, y , callback){
-    setTimeout(() => {
-    document.write(`The sum of ${x} and ${y} is ${x+y}.`); 
-    callback(); 
-     }, 5000); } 
-     // display() function is called just after the ending of addition() function
-    function mycallback(){ 
-    document.write('Numbers added and thank u'); 
-     } 
-     // Calling addition() function
-    addition(5,5,mycallback);
+// function addition(x, y , callback){
+//     setTimeout(() => {
+//     document.write(`The sum of ${x} and ${y} is ${x+y}.`); 
+//     callback(); 
+//      }, 5000); } 
+//      // display() function is called just after the ending of addition() function
+//     function mycallback(){ 
+//     document.write('Numbers added and thank u'); 
+//      } 
+//      // Calling addition() function
+//     addition(5,5,mycallback);
 
 
 
@@ -74,3 +74,24 @@ function addition(x, y , callback){
 //   }
 
   //random numbwers
+
+
+  let arr = [];
+
+ for(var i = 1; i<=100; i++){
+    arr.push(i);
+ }
+ 
+
+ let arr2 = arr.filter((num)=>{
+    for(var j = 2; j<=100; j++){
+    
+      if(num%j==0 && num!==j){
+       return false;
+      }
+     
+    }
+     return true;
+    })
+
+console.log(arr2)
