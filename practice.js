@@ -1622,39 +1622,67 @@
 //  console.log(car1,car2);
 
 
- const person = {
-  firstname: "John",
-  lastname: "Doe",
-  age: 50,
-  eyecolor: "blue"
-};
-person.gender = "male";
-/////delete property of an object
-delete person.age;
+//  const person = {
+//   firstname: "John",
+//   lastname: "Doe",
+//   age: 50,
+//   eyecolor: "blue"
+// };
+// person.gender = "male";
+// /////delete property of an object
+// delete person.age;
 
-console.log(person);
+// console.log(person);
 
 
 /////nested objects and arrays
-let x = "";
-const myObj = {
-  name: "John",
-  age: 30,
-  cars: [
-    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-    {name:"BMW", models:["320", "X3", "X5"]},
-    {name:"Fiat", models:["500", "Panda"]}
-  ]
-}
+// let x = "";
+// const myObj = {
+//   name: "John",
+//   age: 30,
+//   cars: [
+//     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//     {name:"BMW", models:["320", "X3", "X5"]},
+//     {name:"Fiat", models:["500", "Panda"]}
+//   ]
+// }
 
-for(let i in myObj.cars){
-  x+=myObj.cars[i].name+",";
-  for(let j in myObj.cars[i].models){
-    x+=myObj.cars[i].models[j]+"<br>";
-  }
-}
+// for(let i in myObj.cars){
+//   x+=myObj.cars[i].name+",";
+//   for(let j in myObj.cars[i].models){
+//     x+=myObj.cars[i].models[j]+"<br>";
+//   }
+// }
 
 
-document.getElementById("demo").innerHTML = x;
-console.log(x)
+// document.getElementById("demo").innerHTML = x;
+// console.log(x)
  
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+//javascript destruchring
+
+
+// on array
+[a, b, c, ...d] = [1,2,3,4,5,6,7,8,9,10, 11, 12, 13];
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+
+
+
+({a, b, c, ...d} = {a: 34, b:345, c:67, d:45, e:34})
+console.log(a, b, c, d)
+
+
+const fruits = ['Apple', 'Bananas', 'Mangoes'];
+[a, b, c] = fruits;
+console.log(a, b, c);
