@@ -72,3 +72,5 @@ let arr = [];
  document.getElementById("demo1").innerHTML=arr[INDEX];
 
   }
+
+  //random numbwers
