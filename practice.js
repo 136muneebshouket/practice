@@ -47,15 +47,28 @@
 
 
 
-class programer extends employee{
-constructor(givenname, givenexperience, givendivision,language,github){
-super(givenname, givenexperience, givendivision);
-this.language = language;
-this.github = github;
-}
+// class programer extends employee{
+// constructor(givenname, givenexperience, givendivision,language,github){
+// super(givenname, givenexperience, givendivision);
+// this.language = language;
+// this.github = github;
+// }
 
-}
+// }
 
- let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
- console.log(employe); 
+//  let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
+//  console.log(employe); 
 
+// generating random numbers from an arrray
+
+let arr = [];
+
+ for(var i = 1; i<=100; i++){
+    arr.push(i);
+ }
+ 
+  const func = ()=>{
+ let INDEX =    Math.floor(Math.random()* (arr.length-1))
+ document.getElementById("demo1").innerHTML=arr[INDEX];
+
+  }
