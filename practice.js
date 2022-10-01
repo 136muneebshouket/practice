@@ -15,6 +15,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 // Pretend that this response is coming from the server
 // const students = [
 //     {name: "harry", subject: "JavaScript"},
@@ -47,6 +58,14 @@
 
 
 
+
+
+
+
+
+
+
+
 // class programer extends employee{
 // constructor(givenname, givenexperience, givendivision,language,github){
 // super(givenname, givenexperience, givendivision);
@@ -58,6 +77,17 @@
 
 //  let employe = new programer("mirza",0,"javascript","javascript","muneeb136");
 //  console.log(employe); 
+
+
+
+
+
+
+
+
+
+
+
 
 // generating random numbers from an arrray
 
@@ -74,6 +104,15 @@
 //   }
 
   //random numbwers
+   
+
+
+
+
+
+
+
+
 
 
 //   let arr = [];
@@ -97,6 +136,17 @@
 // console.log(arr2)
 
 
+
+
+
+
+
+
+
+
+
+
+
 // let increment = document.querySelector("#increment");
 // let decrement = document.querySelector("#decrement");
 // let counterValue = document.querySelector("#counterValue");
@@ -112,6 +162,18 @@
 //     counter--;
 //     counterValue.innerText = counter;
 // });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // const text = [
@@ -158,12 +220,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // split method of string method
 
 // let text = "abcdefg";
 // const myArray = text.split(",");
 // document.getElementById("demo").innerHTML = myArray;
 // console.log(myArray)
+
+
+
+
+
+
+
+
+
+
+
 
 // // getting number from user and finding prime number btween it
 // const form = document.querySelector(".grocery-form");
@@ -198,6 +284,12 @@
 
 
 
+
+
+
+
+
+
 // console.log("inheritance");
 
 // class employee {
@@ -227,6 +319,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 // function employee(name, jobtitle, born) {
 //   this.name = name;
 //   this.jobtitle = jobtitle;
@@ -238,23 +341,72 @@
 // document.getElementById("demo").innerHTML = fred.salary;
 
 
+
+
+
+
+
+
+
+
+
+
+
 // let text1 = "ab";
 // let text2 = "cd";
 // let result = text1.localeCompare(text2);
 
 // document.getElementById("demo").innerHTML = result;
 
-function myFunction() {
-  document.getElementById("btn").setAttribute("onclick", "myFunc2()"); 
-}
 
-const myFunc1=()=>{
 
-console.log('i was clicked');
 
-}
-const myFunc2=()=>{
 
-  console.log('i 2 was clicked');
+
+
+
+
+
+
+
+// function myFunction() {
+//   document.getElementById("btn").setAttribute("onclick", "myFunc2()"); 
+//   document.getElementById("btn").innerHTML='change';
+// }
+
+// const myFunc1=()=>{
+
+// console.log('i was clicked');
+
+// }
+// const myFunc2=()=>{
   
-  }
+//   console.log('i 2 was clicked');
+  
+//   }
+
+
+
+
+
+
+
+
+
+
+// The setInterval() and clearinterval() method calls a function at specified intervals (in milliseconds).
+
+// The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
+
+// 1 second = 1000 milliseconds.
+
+const myInterval = setInterval(myTimer, 1000);
+
+function myTimer() {
+  const date = new Date();
+  document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+}
+
+function myStop() {
+  clearInterval(myInterval);
+}
